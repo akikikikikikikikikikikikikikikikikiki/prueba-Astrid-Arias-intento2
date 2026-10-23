@@ -1,0 +1,94 @@
+header{
+	color:Plum;
+	background-color:#6A5ACD;
+	text-align:center;
+	font-size:30px;
+}
+body{
+	color:Plum;
+	background-color:#8B008B;
+}/*poner de rosita el texto del body*/
+
+
+
+p{ font-family: "Tahona";
+font-size: 20px;
+color: plum;
+text-align:justify;
+font-size:15px
+}/*letra tahona de 20px en color purple*/
+
+
+footer{
+	color:Indigo;
+	background-color:#E6E6FA;
+	text-align:center;
+	font-size:15px;
+}
+.vamosaensayar{
+	font-family:"Bahnschrift SemiBold";
+	font-size:60px;
+	font-style:italic;
+	font-weight:bold;
+	font-variant:small-caps;
+	color:plum;
+	text-align:center;
+	text-decoration:plum underline wavy;
+	text-shadow:2px 2px 4px #191970;
+	line-height:1,5;
+}
+#menuhorizontal ul li {
+	display: inline;
+	padding:2px 7px; /*separar el texto*/
+	margin: 5px; /*Separar los botones*/
+	background-color:#800080;
+	color:white;
+	font-family:"comic Sans Ms";
+	font-size:"20px";
+}
+#menuhorizontal ul {
+	/*Linea para delinear la botonera*/
+	border-bottom:5px;
+	border-bottom-style:solid;
+	border-bottom-color:#E4E4E4
+}
+#menuhorizontal ul li:hover{
+	background-color:#576841; /*Color de fondo sobre el botón*/
+	cursor:pointer/*Cambiar el aspecto del puntero*/
+}
+#menuhorizontal ul li a{
+	text-decoration:none;
+	color:inherit;
+}
+#menuD a{ /*quita el subrayado al enlace y hereda el color del texto*/
+text-decoration:none;
+color:inherit;
+}
+#menuD ul li{/*formato de los botones*/
+width:10px;
+height:25px;
+display:inline-block;/*en linea pero respetando márgenes*/
+padding:2px 7px;
+margin:5px;
+background-color:#800080;
+color:white;
+text-align:center;
+font-family:"comic sans MS";
+font-size:16px;
+position:relative;
+}
+#menuD ul li:hover{
+	background-color:grey;
+	color:purple;
+}
+#menuD li>ul{
+	display:none;/*oculta las listas anidadas, los submenús*/
+}
+#menuD li:hover>ul{/*muestra los submenús al pasar por encima del menú*/
+	display:inline-block;/*muestra los submenús uno debajo del otro al lado del menú*/
+	position:absolute;/*evita que se superpongan los botones*/
+}
+#menuD ul>li:hover>ul{
+	display:inline-block;
+	position:absolute;
+}
